@@ -1,0 +1,19 @@
+name: insecure-example
+
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions: write-all
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pull-request code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Print pull-request title
+        run: echo "${{ github.event.pull_request.title }}"
