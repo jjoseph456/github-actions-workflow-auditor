@@ -11,6 +11,8 @@ repository access beyond the files being scanned.
 This is a personal, unofficial project based on public GitHub Actions security
 guidance. All included workflows and reports are synthetic.
 
+![Terminal preview of workflow audit findings](assets/terminal-preview.svg)
+
 ## Why This Project
 
 Workflow failures and security exposures often come from a small set of

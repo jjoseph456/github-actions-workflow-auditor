@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="278" viewBox="0 0 900 278" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Actions Workflow Auditor terminal output</title>
+  <desc id="desc">Synthetic security and reliability findings from a workflow review.</desc>
+  <rect width="900" height="278" rx="12" fill="#0d1117"/>
+  <rect width="900" height="38" rx="12" fill="#161b22"/>
+  <circle cx="24" cy="19" r="6" fill="#ff5f57"/><circle cx="44" cy="19" r="6" fill="#febc2e"/><circle cx="64" cy="19" r="6" fill="#28c840"/>
+  <g font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16">
+    <text x="24" y="70" fill="#8b949e">$ workflow-audit examples/insecure.yml --fail-on medium</text>
+    <text x="24" y="106" fill="#c9d1d9">Scanned: 1 workflow file   Findings: 2 critical, 2 high, 2 medium, 1 low</text>
+    <text x="24" y="140" fill="#f85149">[CRITICAL] GHA007  Pull-request head checkout under pull_request_target</text>
+    <text x="24" y="166" fill="#f85149">[CRITICAL] GHA002  Replace permissions: write-all with the minimum required</text>
+    <text x="24" y="192" fill="#d29922">[MEDIUM]   GHA005  Pin actions/checkout to a full commit SHA</text>
+    <text x="24" y="232" fill="#8b949e">Synthetic example. Findings are review signals, not exploitability claims.</text>
+  </g>
+</svg>
