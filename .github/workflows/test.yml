@@ -32,3 +32,6 @@ jobs:
 
       - name: Audit secure example
         run: workflow-audit examples/secure.yml
+
+      - name: Audit this repository's own workflows
+        run: workflow-audit .github/workflows --fail-on low
